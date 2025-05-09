@@ -12,6 +12,48 @@
 </head>
 
 <body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logoNavbar.png" alt="mainLogo">
+                <span class="ms-2">CineBlog</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Filmes</a></li>
+                            <li><a class="dropdown-item" href="#">Séries</a></li>
+                            <li><a class="dropdown-item" href="#">Animação</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Críticas</a></li>
+                            <li><a class="dropdown-item" href="#">Lançamentos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar no blog..."
+                        aria-label="Search" />
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <div class="banner">
         <div class="container-fluid p-0">
             <div class="row g-0">
@@ -36,9 +78,8 @@
             </div>
         </div>
     </div>
-
     <main class="container py-5">
-        <article class="mb-5">
+        <article class="mb-5 article-container">
 
             <p class="textJustify"><em>Stranger Things</em> se prepara para sua despedida com a aguardada quinta e
                 última temporada. Após anos de sucesso mundial, a série da Netflix chega ao seu desfecho prometendo
@@ -53,6 +94,13 @@
             <p class="textJustify">A trama seguirá os eventos dramáticos da quarta temporada, com Hawkins parcialmente
                 destruída e o Mundo Invertido invadindo o mundo real. A batalha final contra Vecna e outras ameaças será
                 central para o enredo.</p>
+
+            <div class="video-wrapper">
+                <iframe width="760" height="415" src="https://www.youtube.com/embed/pWHSdQkvwgk?si=r1wRooElplbU64FO"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
             <h2 class="h4 mt-4">Elenco e retornos esperados</h2>
             <p class="textJustify">O elenco principal retorna, com Millie Bobby Brown, Finn Wolfhard, Gaten Matarazzo,
@@ -72,10 +120,11 @@
                 tornou a série um fenômeno global desde sua estreia em 2016.</p>
         </article>
     </main>
-    <section class="container my-5">
-        <h3 class="mb-4">Deixe seu comentário</h3>
 
-        <form class="mb-5">
+    <section class="container my-5">
+        <h3 class="mb-4 title-comment">Deixe seu comentário</h3>
+
+        <form class="mb-5 comment">
             <div class="mb-3">
                 <label for="commentName" class="form-label">Seu nome</label>
                 <input type="text" class="form-control" id="commentName" placeholder="Digite seu nome" required>

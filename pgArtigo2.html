@@ -12,6 +12,48 @@
 </head>
 
 <body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="inde">
+                <img src="assets/img/logoNavbar.png" alt="mainLogo">
+                <span class="ms-2">CineBlog</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Filmes</a></li>
+                            <li><a class="dropdown-item" href="#">Séries</a></li>
+                            <li><a class="dropdown-item" href="#">Animação</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Críticas</a></li>
+                            <li><a class="dropdown-item" href="#">Lançamentos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar no blog..."
+                        aria-label="Search" />
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <div class="banner">
         <div class="container-fluid p-0">
             <div class="row g-0">
@@ -36,7 +78,7 @@
         </div>
     </div>
     <main class="container py-5">
-        <article class="mb-5">
+        <article class="mb-5 article-container">
 
             <p class="textJustify">Em 2025, comemoramos os 15 anos desde a estreia de <em>Breaking Bad</em>, uma série
                 que redefiniu os padrões da televisão dramática. Criada por Vince Gilligan, a produção conquistou
@@ -51,6 +93,13 @@
             <p class="textJustify">O roteiro brilhantemente construído mostra como circunstâncias extremas podem revelar
                 os aspectos mais sombrios da natureza humana. A série também se destaca por sua atenção aos detalhes,
                 simbolismos e narrativa visual, tornando cada episódio memorável.</p>
+
+            <div class="video-wrapper">
+            <iframe width="760" height="415" src="https://www.youtube.com/embed/FH_Pm-0kuFc?si=mJrPutzYlqiH8iwz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
 
             <h2 class="h4 mt-4">Personagens icônicos</h2>
             <p class="textJustify">Além de Walter, outros personagens como Jesse Pinkman (Aaron Paul), Saul Goodman (Bob
@@ -71,9 +120,9 @@
         </article>
     </main>
     <section class="container my-5">
-        <h3 class="mb-4">Deixe seu comentário</h3>
+        <h3 class="mb-4 title-comment">Deixe seu comentário</h3>
 
-        <form class="mb-5">
+        <form class="mb-5 comment">
             <div class="mb-3">
                 <label for="commentName" class="form-label">Seu nome</label>
                 <input type="text" class="form-control" id="commentName" placeholder="Digite seu nome" required>

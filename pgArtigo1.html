@@ -10,8 +10,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="bg-dark text-white">
+<body class="bg-dark text-white"></body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logoNavbar.png" alt="mainLogo">
+                <span class="ms-2">CineBlog</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Filmes</a></li>
+                            <li><a class="dropdown-item" href="#">Séries</a></li>
+                            <li><a class="dropdown-item" href="#">Animação</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Críticas</a></li>
+                            <li><a class="dropdown-item" href="#">Lançamentos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar no blog..."
+                        aria-label="Search" />
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <div class="banner">
         <div class="container-fluid p-0">
             <div class="row g-0">
@@ -20,13 +61,13 @@
                         <img src="assets/img/TLOU-banner.webp" class="img-fluid w-100" alt="The Last of Us">
                         <div class="featured-overlay d-flex flex-column justify-content-end">
                             <div class="featured-info p-4">
-                                <span class="badge bg-danger mb-2">ANÁLISE</span>
-                                <h1 class="display-4 fw-bold text-white">HBO confirma terceira temporada de The Last of
-                                    Us para 2026</h1>
+                                <span class="badge bg-danger mb-2">NOVIDADES</span>
+                                <h1 class="display-4 fw-bold text-white">The Last of Us: Terceira temporada confirmada
+                                </h1>
                                 <div class="d-flex align-items-center mb-3">
-                                    <span class="post-meta me-3"><i class="bi bi-calendar3"></i> 9 de maio, 2025</span>
-                                    <span class="post-meta me-3"><i class="bi bi-person-circle"></i> Por Heitor</span>
-                                    <span class="post-meta"><i class="bi bi-chat-left-text"></i> 18 comentários</span>
+                                    <span class="post-meta me-3"><i class="bi bi-calendar3"></i> 5 de maio, 2025</span>
+                                    <span class="post-meta me-3"><i class="bi bi-person-circle"></i> Por Laura</span>
+                                    <span class="post-meta"><i class="bi bi-chat-left-text"></i> 32 comentários</span>
                                 </div>
                             </div>
                         </div>
@@ -35,51 +76,49 @@
             </div>
         </div>
     </div>
-    <main class="container py-5">
-        <article class="mb-5">
 
+    <main class="container py-5">
+        <article class="mb-5 article-container">
             <p class="textJustify">A HBO confirmou oficialmente a terceira temporada de <em>The Last of Us</em>, antes
-                mesmo da estreia da
-                segunda temporada, que ocorreu em 13 de abril de 2025. A série, baseada no aclamado jogo da Naughty Dog,
-                continua a explorar o mundo pós-apocalíptico com profundidade emocional e narrativa envolvente.</p>
+                mesmo da estreia da segunda temporada, que ocorreu em 13 de abril de 2025. A série, baseada no aclamado
+                jogo da Naughty Dog, continua a explorar o mundo pós-apocalíptico com profundidade emocional e narrativa
+                envolvente.</p>
 
             <h2 class="h4 mt-4">O que esperar da terceira temporada</h2>
             <p class="textJustify">A terceira temporada continuará adaptando os eventos do jogo <em>The Last of Us Part
-                    II</em>, cuja
-                narrativa complexa e extensa exigiu que os criadores dividissem sua adaptação em múltiplas temporadas.
-                Com isso, a nova temporada promete aprofundar ainda mais os dilemas morais e os relacionamentos dos
-                personagens, mantendo a fidelidade ao material original.</p>
+                    II</em>, cuja narrativa complexa e extensa exigiu que os criadores dividissem sua adaptação em
+                múltiplas temporadas. Com isso, a nova temporada promete aprofundar ainda mais os dilemas morais e os
+                relacionamentos dos personagens, mantendo a fidelidade ao material original.</p>
 
-            <p>A produção da terceira temporada já está em pré-produção, com as filmagens previstas para começarem no
-                verão de 2025. Essa programação sugere que a estreia poderá ocorrer em 2026, mantendo um intervalo
-                relativamente curto entre as temporadas.</p>
+            <p class="textJustify">A produção da terceira temporada já está em pré-produção, com as filmagens previstas
+                para começarem no verão de 2025. Essa programação sugere que a estreia poderá ocorrer em 2026, mantendo
+                um intervalo relativamente curto entre as temporadas.</p>
 
-            <figure class="my-4">
-                <img src="assets/img/TLOU-img.jpg" class="img-fluid rounded" alt="Poster The Last of Us">
-                <figcaption class="text-muted mt-2 small">Imagem: Divulgação / HBO</figcaption>
-            </figure>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/0vB2lHQim3Q?si=BeuLBqAtQJhn8nX4" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
 
             <h2 class="h4 mt-4">Elenco e equipe criativa</h2>
             <p class="textJustify">Bella Ramsey e Pedro Pascal devem retornar como Ellie e Joel, respectivamente, dando
-                continuidade às suas
-                performances aclamadas. A equipe criativa, liderada por Craig Mazin e Neil Druckmann, permanece
-                comprometida em entregar uma adaptação que respeite a essência do jogo, explorando temas profundos e
-                emocionantes.</p>
+                continuidade às suas performances aclamadas. A equipe criativa, liderada por Craig Mazin e Neil
+                Druckmann, permanece comprometida em entregar uma adaptação que respeite a essência do jogo, explorando
+                temas profundos e emocionantes.</p>
 
             <h2 class="h4 mt-4">Conclusão</h2>
             <p class="textJustify">A renovação antecipada para a terceira temporada demonstra a confiança da HBO no
-                sucesso contínuo de
-                <em>The Last of Us</em>. Com uma narrativa rica e personagens complexos, a série continua a cativar o
-                público e a crítica, consolidando-se como uma das adaptações de videogame mais bem-sucedidas da
-                televisão.
-            </p>
+                sucesso contínuo de <em>The Last of Us</em>. Com uma narrativa rica e personagens complexos, a série
+                continua a cativar o público e a crítica, consolidando-se como uma das adaptações de videogame mais
+                bem-sucedidas da televisão.</p>
         </article>
     </main>
 
     <section class="container my-5">
-        <h3 class="mb-4">Deixe seu comentário</h3>
+        <h3 class="mb-4 title-comment">Deixe seu comentário</h3>
 
-        <form class="mb-5">
+        <form class="mb-5 comment">
             <div class="mb-3">
                 <label for="commentName" class="form-label">Seu nome</label>
                 <input type="text" class="form-control" id="commentName" placeholder="Digite seu nome" required>
@@ -94,6 +133,7 @@
             <button type="submit" class="btn btn-dark">Enviar comentário</button>
         </form>
     </section>
+
     <footer class="footer bg-dark text-white py-4 mt-5 border-top border-secondary">
         <div class="container">
             <div class="row align-items-center">
